@@ -105,7 +105,3 @@ import './styles.scss';
 **License**
 
 - See the repository `LICENSE` file.
-
----
-
-If you want, I can also add a short usage example, screenshots, or CI deploy snippets for common GOV.UK hosting patterns — tell me which you'd prefer.
