@@ -1,0 +1,18 @@
+{
+  "name": "govuk-vite",
+  "version": "1.0.0",
+  "description": "A Vite starter for compiling GOV.UK Frontend assets",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "govuk-frontend": "^6.0.0"
+  },
+  "devDependencies": {
+    "sass": "^1.97.3",
+    "vite": "^7.3.1",
+    "vite-plugin-static-copy": "^3.2.0"
+  }
+}
