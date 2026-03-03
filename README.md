@@ -4,8 +4,6 @@
 
 A minimal Vite-based starter for compiling GOV.UK Frontend assets and styles. This project is aimed at engineers working on GOV.UK services who want a small, modern build setup for assets (JS/CSS) while using the official `govuk-frontend` package. It is a lightweight alternative to Webpack-based asset pipelines and can be used as a simpler starting point for service teams.
 
-**Status:** Lightweight starter — intended as a reference and starting point for service teams.
-
 **Goals:**
 
 - Provide a simple Vite workflow for local development and production builds.
@@ -97,7 +95,7 @@ import '../stylesheets/application.scss';
 
 **Django integration**
 
-If you use Django, we keep a small, copyable example in `examples/` that demonstrates the recommended pattern for production use. See [examples/README.md](examples/README.md#django) for details.
+If your team use Django, there is a small, copyable example in `examples/` that demonstrates the recommended pattern for production use. See [examples/README.md](examples/README.md#django) for details.
 
 **Troubleshooting**
 
