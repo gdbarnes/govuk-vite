@@ -1,5 +1,7 @@
 # GOV.UK Vite starter
 
+[![version](https://img.shields.io/badge/version-1.0.0-blue)](package.json) [![govuk-frontend](https://img.shields.io/badge/govuk--frontend-%5E6.0.0-orange)](https://www.npmjs.com/package/govuk-frontend) [![vite](https://img.shields.io/badge/vite-%5E7.3.1-lightgrey)](https://vitejs.dev/) [![node](https://img.shields.io/badge/node-%3E%3D18-brightgreen)](https://nodejs.org/) [![license](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
+
 A minimal Vite-based starter for compiling GOV.UK Frontend assets and styles. This project is aimed at engineers working on GOV.UK services who want a small, modern build setup for assets (JS/CSS) while using the official `govuk-frontend` package. It is a lightweight alternative to Webpack-based asset pipelines and can be used as a simpler starting point for service teams.
 
 **Status:** Lightweight starter — intended as a reference and starting point for service teams.
@@ -60,24 +62,24 @@ yarn preview
 **What’s included**
 
 - `index.html` — example entry that includes compiled assets.
-- `src/main.js` — JS entrypoint where you can import GOV.UK components.
-- `src/styles.scss` — Sass entry importing `govuk-frontend` styles and custom overrides.
+- `src/javascripts/application.js` — JS entrypoint where you can import GOV.UK components.
+- `src/stylesheets/application.scss` — Sass entry importing `govuk-frontend` styles and custom overrides.
 - `vite.config.js` — minimal Vite config, including static copy plugin if needed.
 
 **Using GOV.UK Frontend**
 
-This starter uses the `govuk-frontend` npm package. Import components or styles from it in your JS/Sass. For example, in `src/styles.scss` you might have:
+This starter uses the `govuk-frontend` npm package. Import components or styles from it in your JS/Sass. For example, in `src/stylesheets/application.scss` you might have:
 
 ```scss
 @import 'govuk-frontend/govuk/all';
 // your overrides here
 ```
 
-And in `src/main.js`:
+And in `src/javascripts/application.js`:
 
 ```js
 import 'govuk-frontend/govuk/all';
-import './styles.scss';
+import '../stylesheets/application.scss';
 
 // Initialise any GOV.UK JS modules as required by your service
 ```
@@ -92,6 +94,10 @@ import './styles.scss';
 
 - This repo is intentionally minimal; adapt `vite.config.js` to integrate with your CI/CD or asset pipeline.
 - Ensure your deployment serves the `dist/` directory and sets appropriate caching headers for assets.
+
+**Django integration**
+
+If you use Django, we keep a small, copyable example in `examples/` that demonstrates the recommended pattern for production use. See [examples/README.md](examples/README.md#django) for details.
 
 **Troubleshooting**
 

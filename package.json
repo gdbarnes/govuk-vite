@@ -2,6 +2,9 @@
   "name": "govuk-vite",
   "version": "1.0.0",
   "description": "A Vite starter for compiling GOV.UK Frontend assets",
+  "engines": {
+    "node": ">=18"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
